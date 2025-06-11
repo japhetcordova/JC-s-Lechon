@@ -1,0 +1,16 @@
+.card{
+    background-color: aliceblue;
+    border: 0.5px solid gray;
+    height: 15rem;
+    border-radius: 0.5rem;
+    padding: 8px;
+    width: 10rem;
+    text-align: center;
+    align-content: center;
+}
+.card-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 50rem;
+}
