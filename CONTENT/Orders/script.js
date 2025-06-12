@@ -27,7 +27,7 @@ button.addEventListener('click', () => {
 
         button.disabled = false;    
         })
-        
+        cancel = false;
         for(let i = 5 ; i >= 0 ; i--){
         setTimeout(()=>{
             if(cancel == true){
@@ -43,7 +43,7 @@ button.addEventListener('click', () => {
                 numReport.textContent = "Number of orders: " + numberOfOrders;  
                 // increment number of total orders and also number of the ordered product. how to store it? 
             }
-        }, ( 5 - i ) * 1000); cancel = false;
+        }, ( 5 - i ) * 1000); 
     }
     } 
     
