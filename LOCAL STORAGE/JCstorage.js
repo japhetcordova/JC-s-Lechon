@@ -26,6 +26,9 @@ console.log(popcornOrders);
 console.log(totalOrders);
 console.log("₱" + totalRevenue);
 
+
+// DATA PRESENTATION
+
 const xAxis = [
     "Burger",
     "Pizza",
@@ -116,3 +119,15 @@ const lineGraph = new Chart("LineGraph", {
     }
   }
 });
+
+const user = {
+  name: "Alice",
+  age: 30
+};
+
+// Convert object to JSON string before storing
+localStorage.setItem("user", JSON.stringify(user));
+
+// To retrieve it later:
+const storedUser = JSON.parse(localStorage.getItem("user"));
+console.log(storedUser.age); // { name: "Alice", age: 30 }

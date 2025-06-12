@@ -1,9 +1,9 @@
 :root {
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    --bg: #1F1F1F;
-    --text: #ffffff;
+    --bg: #ffffff;
+    --text: #000000;
     background: var(--bg);
     color: var(--text);
 }

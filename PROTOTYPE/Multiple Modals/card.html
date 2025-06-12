@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Streak Card</title>
+  <style>
+    body {
+      background-color: #111 ;
+      background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      position: relative;
+      width: 300px;
+      height: 180px;
+      background: #222;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      overflow: hidden;
+      padding: 20px;
+      color: white;
+      z-index: 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 60%
+      );
+      transform: rotate(25deg);
+      animation: lightStreak 2.5s infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    @keyframes lightStreak {
+      0% {
+        transform: translateX(-100%) rotate(25deg);
+      }
+      100% {
+        transform: translateX(100%) rotate(25deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-content">
+      <h3>Thread Thill Theorem</h3>
+      <p>By Japhet Cordova.</p>
+    </div>
+  </div>
+
+</body>
+</html>
