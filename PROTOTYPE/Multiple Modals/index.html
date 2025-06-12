@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC | Modals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Trigger/Open The Modal -->
+    <button id="button1">Open Modal1</button>
+    <button id="button2">Open Modal2</button>
+    <button id="button3">Open Modal3</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="modal1" class="modal-section">
+                <h1 class="product-title">Product 1</h1>
+                <p class="product-description">
+                    description:<br>
+                    Lechon Paksiw is a Filipino dish made from leftover roasted pork, known as lechon. The pork is simmered in a mixture of spices to make a flavorful and tangy sauce. This dish is a popular way to repurpose lechon, making sure that none of the delicious roast goes to waste.
+                </p>
+                <div class="product-photo">
+                    <img src="/ASSETS/Lechon-Paksiw.jpg" alt="Lechon Paksiw">
+                </div>
+                <button class="order-btn">Order</button>
+            </div>
+            <div id="modal2" class="modal-section">
+                <p>This is modal2</p>
+                <button>Order Product 2</button>
+            </div>
+            <div id="modal3" class="modal-section">
+                <p>This is modal3</p>
+                <button>Order Product 3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
