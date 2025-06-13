@@ -1,3 +1,5 @@
+> ⚠️ **Note:** This project was not finished. I'm hoping to either complete it in the future or recreate it from scratch with everything I’ve learned. For now, I’ve decided to step away from this project and focus on the next chapter in my learning journey.
+
 # 🌟 Lessons Learned from JC’s Lechon Project  
 *Reflections from a Junior Developer’s First Real-World Build*
 
@@ -60,6 +62,6 @@ JC’s Lechon wasn’t just a food ordering website—it was my training ground.
 
 
 
-> ⚠️ **Note:** This project was not finished. I'm hoping to either complete it in the future or recreate it from scratch with everything I’ve learned. For now, I’ve decided to step away from this project and focus on the next chapter in my learning journey.
+
 
 
