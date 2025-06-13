@@ -1,0 +1,141 @@
+
+
+/* Modal Background */
+.modal {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+
+}
+
+/* Modal Content Box */
+.modal-content {
+    position: relative;
+    margin: auto;
+    background: linear-gradient(to right, #fff1c1, #ffdca8);
+    border: 1px solid #888;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+    );
+    transform: skewX(-20deg);
+    animation: shine 2.5s infinite ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes shine {
+    0% {
+        left: -75%;
+    }
+    100% {
+        left: 125%;
+    }
+}
+.modal-section,
+.modal-content * {
+    position: relative; /* Ensure content appears above streak */
+    z-index: 2;
+}
+
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Hide all modal sections by default */
+.modal-section {
+    display: none;
+}
+
+/* Product Content */
+.product-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.product-photo {
+    border: 2px solid #e8d4d4;
+    border-radius: 15px;
+    padding: 8px;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.product-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Order Button */
+.order-btn {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: transparent;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #4c493d;
+    color: #fff;
+}

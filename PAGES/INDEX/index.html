@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/CONTENT/DarkmodeSwitch/assets/darkmodeswitch.css">
     <link rel="icon" type="image/png" href="/ASSETS/JC.jpg" />
     <link rel="stylesheet" href="/CSS/loading.css">
+    <link rel="stylesheet" href="/CSS/modal.css">
 </head>
 <body>
     <div id="preloader">
@@ -37,7 +38,7 @@
         <main id="menu">
             <h1>Lechon Dishes</h1>
             <div class="card-container">
-                <div class="card">Classic Lechon<img src="/ASSETS/classic-lechon.jpg" alt="Classic Letchon"></div>
+                <div class="card" id = "classicLechon">Classic Lechon<img src="/ASSETS/classic-lechon.jpg" alt="Classic Letchon"></div>
                 <div class="card">Roasted Pork Leg <img src="/ASSETS/Lechon's-Roasted-Pork-Leg.jpg" alt="Roasted Pork Leg"></div>
                 <div class="card">Roasted Pork Belly <img src="/ASSETS/Roasted-Pork-Belly.jpeg" alt="Roasted Pork Belly"></div>
                 <div class="card">Cuban Lechon Asado <img src="/ASSETS/Cuban-Lechon-Asado.jpg" alt="Cuban Lechon Asado"></div>
@@ -83,9 +84,36 @@
             </div>
             <p class="footer-note">© 2025 JC | Lechon. All rights reserved.</p>
         </footer>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="modal1" class="modal-section">
+                <div class="product-photo">
+                    <img src="/ASSETS/Lechon-Paksiw.jpg" alt="Lechon Paksiw">
+                </div>
+                <h1 class="product-title">Product 1</h1>
+                <p class="product-description">
+
+                    Lechon Paksiw is a Filipino dish made from leftover roasted pork, known as lechon. The pork is simmered in a mixture of spices to make a flavorful and tangy sauce. This dish is a popular way to repurpose lechon, making sure that none of the delicious roast goes to waste.
+                </p>
+                
+                <button class="order-btn">Order</button>
+            </div>
+            <div id="modal2" class="modal-section">
+                <p>This is modal2</p>
+                <button>Order Product 2</button>
+            </div>
+            <div id="modal3" class="modal-section">
+                <p>This is modal3</p>
+                <button>Order Product 3</button>
+            </div>
+        </div>
+    </div>
 
     </div>
     <script src="/CONTENT/DarkmodeSwitch/DarkmodeSwitch.js"></script>
     <script src="/CONTENT/Loading/Loading.js"></script>
+    <script src="/CONTENT/Modal/modal.js"></script>
 </body>
 </html>
